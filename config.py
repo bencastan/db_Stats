@@ -2,6 +2,14 @@
 from configparser import ConfigParser
 
 
+'''Need to create a file called database.ini with the following details:
+    [postgresql]
+    host=<host_name>
+    database=<database_name>
+    user=<database_user>
+    password=<database_password>
+    '''
+
 def config(filename='database.ini', section='postgresql'):
     #create a parser
     parser = ConfigParser()
